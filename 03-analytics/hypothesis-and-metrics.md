@@ -1,17 +1,28 @@
-# Hypothesis & Success Metrics
+# Hypothesis & Success Metrics (Module 3)
 
-> **Module 3 · ★ Deliverable 3.** Repo file `03-analytics/hypothesis-and-metrics.md` — part of your submission.
-> Do the lab in the **Module 3 · Exercise Guide** (linked from the Module 3 deck), then click **⬇ Download .md** — it saves as this exact file. Commit it here.
-> It feeds the **Problem, Value & Hypothesis** slide of your Module 6 final deck.
+## Pre-work · Hypothesis check
+- **Role , who you are solving for (from M2):** Wanderer: a casual subscriber who opens the app to unwind and browses trending
+- **Goal , what this user is ultimately trying to achieve:** Find something worth watching quickly, without effort or regret
+- **Friction / moment of misery , the specific pain blocking their goal:** Scrolls rows of mid-tier titles, can’t tell what’s good, and leaves before pressing play
+- **Current workaround , the external tool or manual process they rely on (M2):** Looks up “what to watch” on friends’ recommendations, review sites, or competitors’ curated lists
+- **Problem Hook , your one-sentence framing of the business crisis (M1):** A decade of “more is better” gave StreamLine 15,000 titles but a reputation as a warehouse of mid-tier content, so engagement is down
+- **Value Proposition , the outcome your initiative promised to deliver (M1):** Spotlight, a premium curated space, makes quality easy to find so quality-minded segments stay and return
 
-## Finalized product hypothesis
+## Read your data snapshots
+- **Does the funnel data confirm your M2 friction point, or does it tell a different story? Note where the numbers align with the qualitative pain you found and where they diverge.:** Mostly confirms the friction, but not where the signal claims. The top of the funnel holds, yet only 29% start playing and 11% reach 30+ minutes, which is a 62% relative loss after play starts. Searched-then-played fell from 41% to 34%, so people look for something and don’t find it. That matches “can’t tell what’s good.” It diverges in one place: if I had expected the leak to be in browsing, the data says depth of engagement is the bigger problem.
+- **Do the retention patterns align with the workaround your M2 persona used to find content? Note what the Mo. 0→1 drop suggests about the onboarding experience your persona described as frustrating.:** It adds nuance,  Spotlight cohorts retain 74 to 79% at Month 1 versus 63 to 68% for Full Library, which supports curation reducing the pain. But the Month 0 to 1 drop is still the largest leak at 21 to 26 points even with Spotlight, so the first month is where the persona gives up and the onboarding experience is still not solving it. Caveats: the Spotlight cohorts are December to February and this isn’t a controlled comparison.
+- **Does the LTV gap and the content mix (61% trending for Wanderers) confirm the moment of misery your persona described? Note which segment your persona is in and whether the data confirms their pain.:** It confirms the pain and the targeting. Wanderers have the lowest LTV ($8.40), the fewest sessions (1.1 a week), and a 61% trending mix, which fits someone who defaults to what’s pushed at them. They also show the biggest churn improvement when exposed to Spotlight (22 points). Weighting by share of base, churn gain, and LTV gives roughly $0.76 per subscriber per month for Wanderers versus $0.59 for Casuals, so they’re the highest-leverage segment despite the lowest LTV. The exposed vs non-exposed gap is correlational.
+- **Does the low adoption confirm your persona is burdened by tools they don’t use? Note whether the low scheduling adoption (42%) for coordinators matches your M2 moment of misery.:** _(not filled in)_
+- **Does the workflow data match the manual process or hack you documented in M2? Note whether the specific drop-offs or time gaps explain why your persona avoids the digital tool.:** _(not filled in)_
+- **Look at the CSAT heatmap. Which specific cell most directly maps to your persona’s friction? Note how the NPS trend justifies the urgency of your M1 Problem Hook.:** _(not filled in)_
 
-> Based on [qual + quant evidence], I believe that [solving X] for [persona] will result in [outcome], as measured by a [X%] change in [success metric]. I will protect [guardrail metric] and make a go/no-go decision after [decision window].
-
-## Success metrics
-
-| Metric | Type | Target | Why it matters |
-|---|---|---|---|
-| _North-star_ | | _____ | _____ |
-| _Leading indicator_ | | _____ | _____ |
-| _Guardrail_ | | _____ | _____ |
+## Step 3 · Craft your hypothesis
+- **Qualitative evidence (from M2) , quote the specific friction / moment of misery for your persona:** Persona scrolls trending, finds nothing worth watching, and leaves or looks elsewhere.
+- **Quantitative evidence (from M3) , name the metric or data point that confirms the pain; cite the number:** Only 11% of sessions reach 30+ minutes, searched-then-played fell from 41% to 34%, and Wanderers show a 22-point churn reduction when Spotlight-exposed.
+- **Persona , role, goal, and the friction you confirmed in the reconciliation steps:** Wanderer: wants something good to watch with minimal effort, and is blocked by a trending-heavy library of mid-tier titles.
+- **Problem you are solving , one sentence describing the specific friction this initiative removes:** Wanderers can’t quickly tell what is worth watching, so they stop browsing before they start a satisfying session.
+- **Strategic outcome , what behaviour change do you expect, and how does it map to retention / revenue / churn?:** Deeper first-month engagement and lower Wanderer churn, protecting recurring revenue from 41% of the base.
+- **Primary success metric (initiative signal) , the leading indicator that tells you the gap is closing:** 30+ minute session rate among Spotlight-exposed Wanderers
+- **Guardrail metric (product signal) , the metric that must NOT drop; it protects your existing base:** Power User sessions per week (4.8×) and overall DAU (1.49M), so curation doesn’t hurt the heavy-use base.
+- **Decision window , how much time or data before you scale, pivot, or kill? minimum threshold to proceed?:** 8 weeks, or two monthly cohorts, against a holdout group. Scale at a 10% or greater relative lift, iterate at 5 to 10%, kill below 5%.
+- **Draft your full hypothesis sentence , one to three sentences; quote the metric, name the persona, name the outcome:** Based on the fact that Wanderers are 41% of our base, watch only 1.1 sessions a week, get 61% of their content from trending, and churn 22 points less when they see Spotlight, I believe that putting curated Spotlight picks in front of them in their first sessions will help them find something worth watching and stay, as measured by a 10% increase in 30+ minute sessions . I will protect Power User sessions per week and overall DAU, and I’ll make a go/no-go call after eight weeks, using a holdout group so we know Spotlight caused the change.

@@ -1,14 +1,20 @@
-# PRD & Prototype Sprint
+# PRD & Prototype Sprint (Module 4)
 
-> **Module 4 · Lab 2.** Repo file `04-roadmap/prd-and-prototype.md` — part of your submission.
-> Do the lab in the **Module 4 · Exercise 2 Guide** (linked from the Module 4 deck), then click **⬇ Download .md** — it saves as this exact file. Commit it here.
-> It deepens the top feature from your `roadmap-prd-prototype.md` and feeds the **Roadmap, PRD & Prototype** slide of your Module 6 deck.
+## Pick & scope with MoSCoW
+- **The “Now” feature I’m scoping (name + one-line core description):** Spotlight Curated Rail, a hand-picked first row on the homepage that bypasses the algorithm.
+- **My finalized Must-Haves (after overriding the AI):** -The rail is the first row for Wanderers
+-8 hand-picked titles in a fixed editorial order
+-Poster, title, and runtime on each card
+-A “Spotlight, picked by our editors” label
+-Tap to a title page, then Play
+-An unavailable pick is replaced by the next one
+- **What I demoted from Must → Should/Won’t, and why:** -Weekly editorial refresh and hiding watched titles (Must to Should): Wanderers watch about 1.1 sessions a week, so they won’t run out of picks in the first sprint.
+-The “Why You’ll Love This” reason and Hidden Gem Badge (to Won’t): they’re separate roadmap features, and keeping them out means a lift in the A/B test can be traced to the rail.
+-Personalized ordering (to Won’t): there’s little taste data for Wanderers, and users distrust “the algorithm.”
 
-## Responses
+## Generate your Simplified PRD
+- **One thing my PRD makes explicit that a vague brief would have missed:** The rail is in the same editorial order for every user and isn’t personalized. A vague brief that said “curated rail” would have let an algorithm creep back in, which is exactly what your interviewee distrusted.
 
-- **The "Now" feature I'm scoping (name + one-line core description):** _(not filled in)_
-- **My finalized Must-Haves (after overriding the AI):** _(not filled in)_
-- **What I demoted from Must → Should/Won't, and why:** _(not filled in)_
-- **One thing my PRD makes explicit that a vague brief would have missed:** _(not filled in)_
-- **Where the prototype revealed a gap in my PRD logic (what I updated):** _(not filled in)_
-- **My shareable prototype URL:** _(not filled in)_
+## Prompt-to-prototype sprint
+- **Where did the prototype reveal a gap in my PRD logic? (what I had to update):** The PRD covered tap to title page to Play, but not how the user gets back. Building it showed that a Wanderer who leaves a title page needs to land on the homepage with the rail still first, so I added that as requirement 7. Run your own tool’s output through your PRD too, because the gap you find there may be a different one.
+- **My prototype, as a link or a screenshot (publish or share from your tool; in Lovable that is Share → Share Preview, in Bolt Publish → Web. No share URL? Screenshot the working flow):** https://claude.ai/artifact/R9Q4cd8hzH6xUb1yMMPgJ4
